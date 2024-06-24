@@ -1,0 +1,71 @@
+body {
+    background-color: powderblue;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000; /* Ensures it's above other content */
+}
+
+header:hover {
+    background-color:darkslategray;
+    border-radius: 10px;
+}
+#main-nav {
+    
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 0;
+}
+
+#main-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#main-nav ul li {
+    margin: 0 10px;
+}
+
+#main-nav ul li a {
+    color: tomato;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#main-nav ul li a:hover {
+    background-color: #555;
+    color: orangered;
+    border-radius: 10px;
+}
+
+.page {
+    height: 100vh;
+    padding-top: 60px; /* Adjust based on header height */
+}
+
+/* Example styles for each page */
+#home {
+    background-color: #f0f0f0;
+}
+
+#about {
+    background-color: #e0e0e0;
+}
+
+#services {
+    background-color: #d0d0d0;
+}
+
+#contact {
+    background-color: #c0c0c0;
+}
